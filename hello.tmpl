@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Hello</title>
+</head>
+<body>
+<p>u1</p>
+{{ with .u1}}
+<p>姓名: {{ .Name}}</p>
+<p>性别: {{ .Gender}}</p>
+<p>年龄: {{ .Age}}</p>
+{{ end }}
+
+<p>m1</p>
+<p>姓名: {{ .m1.name}}</p>
+<p>性别: {{ .m1.gender}}</p>
+<p>年龄: {{ .m1.age}}</p>
+<p>爱好</p>
+{{ range $idx, $hobby := .hobby}}
+    <p>{{ $idx }} - {{ $hobby }}</p>
+{{ end }}
+
+</body>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>xss</title>
+</head>
+<body>
+<p>
+    用户的评论是: （不被信任，你任何时候都不能信任你的用户）{{ .xss }}
+    用户的评论是: （被信任的）{{ .safeStr | safe }}
+
+</p>
+</body>
+</html>

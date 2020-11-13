@@ -1,0 +1,8 @@
+<h1 style='color:orange'>Hello Web!</h1>
+<img id='i1' src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2076207678,867909327&fm=26&gp=0.jpg'/>
+<button id='btn1'>点我</button>
+<script>
+document.getElementById('btn1').onclick=function(){
+    document.getElementById('i1').src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1595254801&di=83054f5e83462ae926c1183d67af489f&src=http://img.mp.itc.cn/upload/20170715/5c083ae5212649dca4ee7e61d46e01d0_th.jpg'
+}
+</script>
